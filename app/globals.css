@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for theming */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+  }
+}
+
+/* Force black background for code blocks (even with rehype-pretty-code) */
+pre[data-theme*=' '] {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Code block styling */
+pre {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+pre code {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Custom scrollbar for code blocks */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prose styling adjustments */
+.prose {
+  color: inherit;
+}
+
+.prose a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+.prose code {
+  background-color: #000;
+  color: #fff;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.prose pre {
+  background-color: #000;
+  color: #fff;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
