@@ -196,3 +196,7 @@ Email: info@giuseppebosi.com
 
 *Last Updated: 2025-01-05*
 
+
+---
+
+Author: Giuseppe Bosi · [www.giuseppebosi.com](https://www.giuseppebosi.com) · [LinkedIn](https://www.linkedin.com/in/giuseppebosi) · License: MIT
